@@ -1,0 +1,30 @@
+// --------------- сброс   стилей--------------
+/*-шрифт на все кроме ссылок и кнопок*/
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+/*- обнуляем отступы*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+/*убираем декор у ссылок и у списков*/
+a {
+  text-decoration: none;
+  color: var(--basic-color);
+}
+li {
+  list-style-type: none;
+}

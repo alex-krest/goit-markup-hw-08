@@ -1,0 +1,25 @@
+/*--секция 1 ГЕРОЙ--*/
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--active-color);
+  min-width: 696px;
+  padding-bottom: 30px;
+}
+.btn-hero {
+  border: 0;
+  padding: 10px 32px;
+  min-width: 73px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--active-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+}

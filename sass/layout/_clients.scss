@@ -1,0 +1,91 @@
+/*  СЕКЦИЯ 5  КЛИЕНТЫ */
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  background-color: var(--active-color);
+  border-radius: 3%;
+  border: 1px solid #afb1b8;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .client-icon.logo-1 {
+    width: 44px;
+    height: 49px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-icon.logo-2 {
+    width: 40px;
+    height: 52px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-icon.logo-3 {
+    width: 41px;
+    height: 42px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-icon.logo-4 {
+    width: 80px;
+    height: 42px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-icon.logo-5 {
+    width: 59px;
+    height: 47px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-icon.logo-6 {
+    width: 88px;
+    height: 45px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+  &:focus .client-icon.logo-1,
+  &:hover .client-icon.logo-1 {
+    fill: var(--accent-color);
+  }
+  &:focus .client-icon.logo-2,
+  &:hover .client-icon.logo-2 {
+    fill: var(--accent-color);
+  }
+  &:focus .client-icon.logo-3,
+  &:hover .client-icon.logo-3 {
+    fill: var(--accent-color);
+  }
+  &:focus .client-icon.logo-4,
+  &:hover .client-icon.logo-4 {
+    fill: var(--accent-color);
+  }
+  &:focus .client-icon.logo-5,
+  &:hover .client-icon.logo-5 {
+    fill: var(--accent-color);
+  }
+  &:focus .client-icon.logo-6,
+  &:hover .client-icon.logo-6 {
+    fill: var(--accent-color);
+  }
+}
