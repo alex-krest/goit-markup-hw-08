@@ -14,22 +14,23 @@
       rel="stylesheet"
     />
     <!--3-ссылка на таблицы стилей в даном проекте-->
-	 <link rel="stylesheet" href="./css/styles-adaptive.css" />
+	 <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!--------ШАПКА------->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
-		<class class="navigation">
+		<nav class="navigation">
         <a class="logo" href="/"><span>Web</span>Studio </a>
         
-			  <button class="menu-button is-open" type="button" data-menu-button aria-expanded="false">
+			  <button class="menu-button" type="button"  aria-expanded="false" aria-controls="menu-container" data-menu-button>
 				  <svg width="40" height="40" aria-label="Переключатель мобильного меню">
 					  <use class="icon-cross" href="./sprite/sprite.svg#cross"></use  >
 					  <use class="icon-menu" href="./sprite/sprite.svg#menu"></use>
 				  </svg>
 			  </button>
+			  
           <ul class="site-nav">
             <li class="list-site">
               <a class="nav nav is-current" href="#">Студия</a>
@@ -60,16 +61,16 @@
             >
           </li>
         </ul>
-		  <div class="menu-container">
+		  <div class="menu-container" id="menu-container" data-menu>
 			  блаблабла
 		  </div>
 		</nav>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-----секция 1 герой---------------->
       <section class="hero">
-        <div class="container">
+        <div class="hero container">
           <h1 class="hero-title">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
@@ -77,7 +78,7 @@
         </div>
       </section>
       <!------секция 2 list список---------------->
-      <section class="list">
+      <!-- <section class="list">
         <div class="container">
           <h2 class="visually-hiden">Особенности</h2>
           <ul class="list-article">
@@ -111,9 +112,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!---секция 3 work чем мы занимаемся-------------->
-      <section class="work">
+      <!-- <section class="work">
         <div class="container">
           <h2 class="work-caption">Чем мы занимаемся</h2>
           <ul class="work-list">
@@ -146,9 +147,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-----секция 4 command наша команда-------------->
-      <section class="command">
+      <!-- <section class="command">
         <div class="container">
           <h2 class="command-caption">Наша команда</h2>
           <ul class="command-list">
@@ -313,9 +314,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- КЛИЕНТЫ -->
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="command-caption">Постоянные клиенты</h2>
           <ul class="clients-list">
@@ -363,10 +364,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- ----------footer---------- -->
-    <footer>
+    <!-- <footer>
       <div class="container footer">
         <div class="left">
           <a class="logo-footer" href="/"><span>Web</span>Studio</a>
@@ -408,9 +409,9 @@
 				  </a>
 				</li>
 			 </ul>
-		   </div>
+		   </div> -->
 					  <!-- --------форма футер---------- -->
-			<div class="footer-form">
+			<!-- <div class="footer-form">
 			<p class="title-right form">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
 			<form class="footer-form-mail">
 			<label class="footer-form-label">
@@ -418,17 +419,17 @@
 			 <button type="submit" class="footer_form-btn">Подписаться</button>
 			</div>
       </div>
-	 </footer>
+	 </footer> -->
 	 <!-- ------backdrop-------- -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
 		<div class="modal">
 			<button type="button" class="close-btn" data-modal-close>
 				<svg class="icon-close" width="18px"
 				height="18px"><use href="./sprite/sprite.svg#close-black">
 				</use></svg>
-		</button>
+		</button> -->
 		<!-- ----------форма----------- -->
-		<form class="modal_form">
+		<!-- <form class="modal_form">
 			<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 			<label class="modal_form-label">
 				Имя
@@ -454,9 +455,11 @@
 			<button type="submit" class="modal_form-btn">Отправить</button>
 		</form> 
 		</div>
-	 </div>
+	 </div> -->
 	 <script src="./js/modal.js">
 	</script>
+	  <script src="./js/menu.js">
+	  </script>
   </body>
 </html>
 

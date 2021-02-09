@@ -52,17 +52,6 @@
   color: var(--text-color);
 }
 
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--active-color);
-  min-width: 696px;
-  padding-bottom: 30px;
-}
-
 .text-list {
   font-style: normal;
   font-weight: 400;
@@ -315,14 +304,6 @@ li {
   list-style-type: none;
 }
 
-/* контейнер для всех секций */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .header .container {
   display: flex;
   align-items: center;
@@ -341,16 +322,6 @@ li {
   margin-right: 93px;
 }
 
-.logo {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
 .logo-footer {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -359,10 +330,6 @@ li {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--active-color);
-}
-
-span {
-  color: var(--accent-color);
 }
 
 .logo-footer {
@@ -402,21 +369,6 @@ span {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero {
-  background-color: var(--hero-color);
-  height: 600px;
-  text-align: center;
-}
-
-.hero {
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imaiges/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .list {
   display: flex;
   align-items: center;
@@ -442,6 +394,14 @@ footer {
 /* ---ШАПКА----*/
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
+}
+
+.header.container {
+  display: flex;
+  align-items: center;
+  min-width: 480px;
+  padding: 16px 15px;
 }
 
 .navigation {
@@ -460,6 +420,32 @@ footer {
 
 .navigation .list-site:not(:last-child) {
   margin-right: 50px;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .nav {
