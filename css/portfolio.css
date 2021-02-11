@@ -314,8 +314,6 @@ li {
   width: 100%;
   padding: 118px 60px;
   text-align: center;
-  border: 1px solid red;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -338,6 +336,14 @@ li {
     padding: 200px 452px;
     margin-bottom: 98px;
   }
+}
+
+.list.container {
+  display: block;
+  width: 100%;
+  padding: 0px 15px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .container.footer {
@@ -403,7 +409,13 @@ li {
 .list {
   display: flex;
   align-items: center;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  .list {
+    padding-bottom: 94px;
+  }
 }
 
 .command {

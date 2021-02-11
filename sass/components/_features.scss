@@ -1,18 +1,16 @@
 
 .list-article {
-	display: flex;
+	display: block;
+	text-align: center;
 	.list-item {
-  width: 270px;
+  width: 450px;
    &:not(:last-child) {
-	margin-right: 30px;}
+	margin-bottom: 30px;}
    &::before {
 		content: "";
 		display: block;
 		background-color: #f5f4fa;
-		width: 270px;
 		height: 120px;
-		margin-top: 94px;
-		margin-bottom: 30px;
 	 }
    .list-caption {
 		font-weight: 700;
@@ -20,9 +18,11 @@
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		color: var(--basic-color);
+		margin-top: 30px;
 		margin-bottom: 10px;
 	 }
 	.text-list {
+		text-align: left;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 14px;
