@@ -1,37 +1,44 @@
-
 .list-article {
-	display: block;
-	text-align: center;
-	.list-item {
-  width: 450px;
-   &:not(:last-child) {
-	margin-bottom: 30px;}
-   &::before {
-		content: "";
-		display: block;
-		background-color: #f5f4fa;
-		height: 120px;
-	 }
-   .list-caption {
-		font-weight: 700;
-		font-size: 14px;
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-		color: var(--basic-color);
-		margin-top: 30px;
-		margin-bottom: 10px;
-	 }
-	.text-list {
-		text-align: left;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 1.714;
-		letter-spacing: 0.03em;
-		color: var(--text-color);
-	 }
-	}
- }
+  display: block;
+  text-align: center;
+  .list-item {
+    width: 450px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      background-color: #f5f4fa;
+      height: 120px;
+    }
+    .list-caption {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--basic-color);
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .text-list {
+      text-align: left;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: var(--text-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-article {
+    flex-basis: calc(100% / 2 - 15px);
+  }
+}
+
 .antenna::before {
   background-image: url(../imaiges-svg/antenna-1.svg);
   @extend %before;
@@ -49,4 +56,3 @@
   background-image: url(../imaiges-svg/clock-1.svg);
   @extend %before;
 }
-
