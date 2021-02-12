@@ -338,18 +338,20 @@ li {
 }
 
 .list.container {
-  display: block;
+  display: flex;
   width: 100%;
   padding: 0px 15px;
   margin-bottom: 60px;
   margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1600px) {
   .list.container {
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+    margin-bottom: 94px;
+    margin-top: 94px;
   }
 }
 
@@ -662,6 +664,31 @@ footer {
   color: var(--text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .list-article {
+    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .list-article .list-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .list-article {
+    display: flex;
+  }
+  .list-article .list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .list-article .list-item {
+    width: 270px;
+  }
+}
+
 .antenna::before {
   background-image: url(../imaiges-svg/antenna-1.svg);
 }
@@ -842,6 +869,9 @@ footer {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/imaiges/hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 480px 400px;
   }
 }
 
@@ -857,6 +887,9 @@ footer {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/imaiges/hero-tab@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 768px 400px;
   }
 }
 
@@ -872,6 +905,9 @@ footer {
 @media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/imaiges/hero-desk@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 604px;
   }
 }
 
@@ -882,7 +918,7 @@ footer {
   line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   min-width: 360px;
   margin-bottom: 30px;
 }

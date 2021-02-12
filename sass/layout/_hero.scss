@@ -1,91 +1,99 @@
 /*--секция 1 ГЕРОЙ--*/
 .hero {
-	background-image: linear-gradient(
-		 rgba(47, 48, 58, 0.4),
-		 rgba(47, 48, 58, 0.4)
-	  ),
-	  url('/imaiges/hero.jpg');
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 480px 400px;
- }
- @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
- screen and (min-resolution: 192dpi) and (min-width: 320px),
- screen and (min-resolution: 2dppx) and (min-width: 320px) {
-	.hero {
-	background-image: 
-     linear-gradient(
-		 rgba(47, 48, 58, 0.4),
-		 rgba(47, 48, 58, 0.4)
-	  ),url('/imaiges/hero@2x.jpg');
- }
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/imaiges/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 480px 400px;
 }
-@media screen and (min-width: 768px){
-.hero {
-	background-image: linear-gradient(
-		 rgba(47, 48, 58, 0.4),
-		 rgba(47, 48, 58, 0.4)
-	  ),
-	  url('/imaiges/hero-tab.jpg');
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 768px 400px;
- }
- @media screen and (min-device-pixel-ratio: 2),
- screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2dppx) {
-	.hero {
-	background-image: 
-     linear-gradient(
-		 rgba(47, 48, 58, 0.4),
-		 rgba(47, 48, 58, 0.4)
-	  ),url('/imaiges/hero-tab@2x.jpg');
- }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/imaiges/hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 480px 400px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/imaiges/hero-tab.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 768px 400px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/imaiges/hero-tab@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 768px 400px;
+    }
+  }
 }
-@media screen and (min-width: 1600px){
-	.hero {
-		background-image: linear-gradient(
-			 rgba(47, 48, 58, 0.4),
-			 rgba(47, 48, 58, 0.4)
-		  ),
-		  url('/imaiges/hero-desk.jpg');
-		background-repeat: no-repeat;
-		background-position: center top;
-		background-size: 1600px 604px;
-	 }
-	 @media screen and (min-device-pixel-ratio: 2),
-	 screen and (min-resolution: 192dpi),
-	 screen and (min-resolution: 2dppx) {
-		.hero {
-		background-image: 
-		  linear-gradient(
-			 rgba(47, 48, 58, 0.4),
-			 rgba(47, 48, 58, 0.4)
-		  ),url('/imaiges/hero-desk@2x.jpg');
-	 }
-	}
+@media screen and (min-width: 1600px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/imaiges/hero-desk.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 604px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/imaiges/hero-desk@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 1600px 604px;
+    }
+  }
 }
 
+.hero-title {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  min-width: 360px;
+  margin-bottom: 30px;
+}
 
-
-.hero-title{ 
-font-family: Roboto;
-font-weight: 900;
-font-size: 26px;
-line-height: 1.615;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: #FFFFFF;
-min-width: 360px;
-margin-bottom: 30px;}
-
-@media screen and (min-width: 1600px)
-{.hero-title {
-	font-size: 44px;
-	line-height: 1.363;
-	min-width: 696px;
-} 
+@media screen and (min-width: 1600px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.363;
+    min-width: 696px;
+  }
 }
 .btn-hero {
   border: 0;
