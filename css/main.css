@@ -338,20 +338,28 @@ li {
 }
 
 .list.container {
-  display: flex;
+  display: block;
   width: 100%;
   padding: 0px 15px;
   margin-bottom: 60px;
   margin-top: 60px;
   margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .list.container {
+    width: 768px;
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .list.container {
+    width: 1600px;
     display: flex;
     margin-bottom: 94px;
     margin-top: 94px;
+    justify-content: center;
   }
 }
 
@@ -569,9 +577,11 @@ li {
 }
 
 .list {
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1600px) {
@@ -630,6 +640,9 @@ footer {
 }
 
 .list-article .list-item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 450px;
 }
 
@@ -681,11 +694,11 @@ footer {
   .list-article {
     display: flex;
   }
-  .list-article .list-item:not(:last-child) {
-    margin-right: 30px;
-  }
   .list-article .list-item {
     width: 270px;
+  }
+  .list-article .list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -860,13 +873,15 @@ footer {
 
 /*--секция 1 ГЕРОЙ--*/
 .hero {
+  display: block;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/imaiges/hero.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 480px 400px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/imaiges/hero@2x.jpg");
     background-repeat: no-repeat;

@@ -24,19 +24,26 @@
   }
 }
 .list.container {
-  display: flex;
+  display: block;
   width: 100%;
   padding: 0px 15px;
   margin-bottom: 60px;
   margin-top: 60px;
   margin-left: auto;
-  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .list.container {
+    width: 768px;
+    display: block;
+  }
 }
 @media screen and (min-width: 1600px) {
   .list.container {
+    width: 1600px;
     display: flex;
     margin-bottom: 94px;
     margin-top: 94px;
+    justify-content: center;
   }
 }
 .container.footer {
