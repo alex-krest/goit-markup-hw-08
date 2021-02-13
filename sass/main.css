@@ -713,6 +713,16 @@ li {
   }
 }
 
+.work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
+
 .command {
   background-color: #f5f4fa;
 }
@@ -788,7 +798,7 @@ footer {
 }
 
 .list-article .list-item::before {
-  content: '';
+  content: "";
   display: block;
   background-color: #f5f4fa;
   height: 120px;
@@ -819,6 +829,8 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
   }

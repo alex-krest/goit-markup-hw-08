@@ -5,11 +5,21 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .list {
     padding-bottom: 94px;
   }
 }
+.work {
+  display: none;
+}
+@media screen and(min-width:1200px) {
+  .work {
+    display: block;
+    padding-bottom: 94px;
+  }
+}
+
 .command {
   @extend %padding;
   background-color: #f5f4fa;

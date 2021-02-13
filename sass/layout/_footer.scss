@@ -1,118 +1,118 @@
 /*--footer--*/
 
 .right {
-  display: block;
-  padding-top: 12px;
-  .title-right {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: var(--active-color);
-    margin-bottom: 20px;
-  }
-  .icons-right {
-    display: flex;
-    justify-content: space-between;
-    .icon:not(:last-child) {
-      margin-right: 10px;
+    display: block;
+    padding-top: 12px;
+    .title-right {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: var(--active-color);
+        margin-bottom: 20px;
     }
-  }
+    .icons-right {
+        display: flex;
+        justify-content: space-between;
+        .icon:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
 }
 
 .link-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
-  .icon-right {
-    fill: var(--active-color);
-    width: 20px;
-    height: 20px;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+    .icon-right {
+        fill: var(--active-color);
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .text-footer {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--active-color);
-  margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--active-color);
+    margin-bottom: 9px;
 }
 .footer-mail,
 .footer-phone {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 .footer-mail {
-  margin-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 /* -----------форма футер----------- */
 .footer-form {
-  padding-top: 12px;
-  &_input {
-    padding-left: 16px;
-    color: var(--active-color);
-    width: 358px;
-    height: 50px;
-    background-color: var(--hero-color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-  &-labe::placeholder {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  &_form-btn {
-    position: relative;
-    height: 50px;
-    padding: 10px 62px 10px 29px;
-    margin-left: 12px;
-    border-radius: 4px;
-    background-color: var(--accent-color);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-  }
-  &_form-btn::after {
-    background-image: url(../imaiges-svg/icon-send.svg);
-    position: absolute;
-    top: 13px;
-    right: 28px;
-    content: " ";
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-size: cover;
-    background-position: center;
-  }
+    padding-top: 12px;
+    &_input {
+        padding-left: 16px;
+        color: var(--active-color);
+        width: 358px;
+        height: 50px;
+        background-color: var(--hero-color);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    &-labe::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &_form-btn {
+        position: relative;
+        height: 50px;
+        padding: 10px 62px 10px 29px;
+        margin-left: 12px;
+        border-radius: 4px;
+        background-color: var(--accent-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.87;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+    }
+    &_form-btn::after {
+        background-image: url(../imaiges-svg/icon-send.svg);
+        position: absolute;
+        top: 13px;
+        right: 28px;
+        content: ' ';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+        background-position: center;
+    }
 }
