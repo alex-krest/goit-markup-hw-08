@@ -1,7 +1,11 @@
 .butons {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+	 flex-wrap: wrap;
+    justify-content: flex-start;
+	 .button-item{
+		flex-basis: calc(100% / 5- 8px);
+      margin-bottom: 15px;
+	 }
     .button-item:not(:last-child) {
         margin-right: 8px;
     }
@@ -27,3 +31,24 @@
         }
     }
 }
+@media screen and (min-width: 768px){
+	.butons {
+		display: flex;
+		justify-content: center;
+		.button-item{
+			margin-right: 8px;
+			margin-bottom: 0px;
+		}
+	}
+}
+@media screen and (min-width: 1200px){
+	.butons {
+		display: flex;
+		.button-item:not(:last-child) {
+			margin-right: 8px;
+		 }
+	}
+}
+
+
+

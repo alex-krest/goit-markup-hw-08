@@ -1,6 +1,7 @@
 .list {
   display: block;
   text-align: center;
+  padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -8,6 +9,7 @@
 @media screen and (min-width: 1200px) {
   .list {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 .work {
@@ -21,21 +23,32 @@
 }
 
 .command {
-  @extend %padding;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 .clients {
-  @extend %padding;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+//     portfolio
+.total {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+}
+@media screen and (min-width: 1200px){
+	.total {
+		padding-top: 94px;
+		padding-bottom: 94px;
+		align-items: center;
+	 }
+}
+
 footer {
   display: block;
   background-color: var(--hero-color);
   padding-bottom: 60px;
   padding-top: 60px;
   margin: 0 auto;
-}
-//     portfolio
-.total {
-  align-items: center;
-  @extend %padding;
 }

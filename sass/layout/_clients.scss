@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 90px;
     background-color: var(--active-color);
     border-radius: 3%;
@@ -88,4 +88,15 @@
     &:hover .client-icon.logo-6 {
         fill: var(--accent-color);
     }
+}
+
+@media screen and (min-width: 768px){
+	.client-link{
+		width: 226px;
+	}
+}
+@media screen and (min-width: 1200px){
+	.client-link{
+		width: 170px;
+	}
 }
