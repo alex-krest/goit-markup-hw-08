@@ -520,7 +520,7 @@ li {
   .clients.container .clients-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 100%;
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -573,12 +573,34 @@ li {
 }
 
 .container.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.footer {
+    width: 1200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .logo {
@@ -1292,8 +1314,8 @@ footer {
 .hero {
   display: block;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imaiges/hero/hero.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imaiges/hero/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imaiges/hero/hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imaiges/hero/hero.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 480px 400px;
@@ -1301,8 +1323,8 @@ footer {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imaiges/hero/hero@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imaiges/hero/hero@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imaiges/hero/hero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imaiges/hero/hero@2x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 480px 400px;
@@ -1311,8 +1333,8 @@ footer {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imaiges/hero/hero-tab.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imaiges/hero/hero-tab.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imaiges/hero/hero-tab.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imaiges/hero/hero-tab.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 768px 400px;
@@ -1321,8 +1343,8 @@ footer {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imaiges/hero/hero-tab@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imaiges/hero/hero-tab@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imaiges/hero/hero-tab@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imaiges/hero/hero-tab@2x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 768px 400px;
@@ -1331,8 +1353,8 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imaiges/hero/hero-desk.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imaiges/hero/hero-desk.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imaiges/hero/hero-desk.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imaiges/hero/hero-desk.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -1342,8 +1364,8 @@ footer {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../imaiges/hero/hero-desk@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../imaiges/hero/hero-desk@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imaiges/hero/hero-desk@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imaiges/hero/hero-desk@2x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1600px 604px;
@@ -1680,9 +1702,15 @@ footer {
 }
 
 /*--footer--*/
+.left {
+  display: block;
+  text-align: center;
+}
+
 .right {
   display: block;
-  padding-top: 12px;
+  padding: 60px 120px;
+  text-align: center;
 }
 
 .right .title-right {
@@ -1700,9 +1728,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .right .icons-right .icon:not(:last-child) {
@@ -1768,10 +1796,13 @@ footer {
 /* -----------форма футер----------- */
 .footer-form {
   padding-top: 12px;
+  text-align: center;
+  margin-top: 0;
 }
 
 .footer-form_input {
   padding-left: 16px;
+  margin-bottom: 20px;
   color: var(--active-color);
   width: 358px;
   height: 50px;
@@ -1818,11 +1849,12 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-form_form-btn {
+.footer-form-btn {
   position: relative;
   height: 50px;
   padding: 10px 62px 10px 29px;
-  margin-left: 12px;
+  border: none;
+  text-align: center;
   border-radius: 4px;
   background-color: var(--accent-color);
   font-family: Roboto;
@@ -1837,17 +1869,50 @@ footer {
   color: #ffffff;
 }
 
-.footer-form_form-btn::after {
+.footer-form-btn::after {
   background-image: url(../imaiges-svg/icon-send.svg);
   position: absolute;
   top: 13px;
   right: 28px;
-  content: ' ';
+  content: " ";
   display: block;
   width: 24px;
   height: 24px;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .left {
+    margin-right: 165px;
+  }
+  .footer-form {
+    margin-top: 60px;
+    padding-top: 0px;
+  }
+  .right {
+    padding: 10px 0px 0px 0px;
+  }
+  .footer-form-label {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: 93px;
+    margin-top: 0;
+    padding-top: 12px;
+    text-align: left;
+  }
+  .right {
+    padding-top: 12px;
+    text-align: left;
+  }
+  .left {
+    text-align: left;
+    margin-right: 70px;
+  }
 }
 
 .article {

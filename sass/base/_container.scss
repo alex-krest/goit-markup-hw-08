@@ -114,7 +114,7 @@
 	margin: 0 auto;
 	 .clients-list{
 	  flex-wrap:nowrap;
-	  width: 100%;
+	  width: 1200px;
 	  display: flex;
 	  .client-item{
 		 margin-top: 30px;
@@ -162,6 +162,23 @@
 
 
 .container.footer {
-	display: flex;
-	justify-content: space-between;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	justify-content: center;
+ }
+ @media screen and (min-width: 768px){
+	.container.footer{
+		display: flex;
+		flex-wrap: wrap;
+		width: 768px;
+		margin: 0 auto;
+	}
+ }
+ @media screen and (min-width: 1200px){
+	.container.footer{
+		width: 1200px;
+		justify-content: center;
+		margin: 0 auto;
+	}
  }

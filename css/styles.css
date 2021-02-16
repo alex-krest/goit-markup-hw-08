@@ -590,7 +590,7 @@ footer {
 /* -----------форма футер----------- */
 .footer-form {
   padding-top: 12px;
-  /* margin-left: 93px; */
+  margin-left: 93px;
 }
 .footer-form_input {
   padding-left: 16px;
@@ -610,7 +610,7 @@ footer {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer_form-btn {
+.footer-form-btn {
   position: relative;
   height: 50px;
   padding: 10px 62px 10px 29px;
